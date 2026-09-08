@@ -8,7 +8,7 @@ export default function Hero() {
   const cards = [
     { id: 1, tag: 'PRINT DESIGN', image: posterImg, caption: 'Sticker & Badge Design' },
     { id: 2, tag: 'BRANDING', image: packagingImg, caption: 'Brochure & Flyer Art' },
-    { id: 3, tag: 'PRINT DESIGN', image: bizcardsImg, caption: null },
+    { id: 3, tag: 'PRINT DESIGN', image: bizcardsImg, caption: 'Business Card Design' },
     { id: 4, tag: 'WEB DESIGN', image: webImg, caption: 'Digital & Social Assets' },
     { id: 5, tag: 'DIGITAL DESIGN', image: stickersImg, caption: 'Premium Packaging' },
   ];
