@@ -13,23 +13,28 @@ export default function Possibilities() {
     { id: 2, label: 'Business Cards', image: cardsImg },
     { id: 3, label: 'Stationery Suite', image: stationeryImg },
     { id: 4, label: 'Brand Packaging', image: packagingImg },
-    { id: 5, label: 'Custom Sticker Sheet', image: stickerImg },
+    { id: 5, label: 'Custom Sticker Seal', image: stickerImg },
     { id: 6, label: 'Editorial Brochure', image: brochureImg },
-    { id: 7, label: 'Social Kit', image: socialImg },
-    { id: 8, label: 'Digital Experience', image: webImg },
+    { id: 7, label: 'Social Story System', image: socialImg },
+    { id: 8, label: 'Immersive E-Commerce', image: webImg },
   ];
 
   return (
     <section className="possibilities">
       <div className="container">
-        <span className="eyebrow center">Versatility</span>
-        <h2 className="section-title">One brand. Endless possibilities.</h2>
+        <div className="possibilities-header">
+          <div>
+            <span className="eyebrow eyebrow-outline">Studio Brand Case</span>
+            <h2 className="possibilities-title">One brand. Endless<br />possibilities.</h2>
+          </div>
+          <p className="possibilities-subtitle">An immersive look into a complete brand identity designed by PixelCraft Studio for a luxury home fragrance label, showcasing modularity and print precision.</p>
+        </div>
 
         <div className="possibilities-grid">
-          {items.map(item => (
+          {items.map((item, index) => (
             <div key={item.id} className="possibility-item">
               <img className="possibility-thumb" src={item.image} alt={item.label} />
-              <p className="possibility-label">{item.label}</p>
+              <p className="possibility-label">{index + 1}. {item.label}</p>
             </div>
           ))}
         </div>

@@ -6,23 +6,23 @@ export default function Testimonials() {
   const testimonials = [
     {
       id: 1,
-      quote: 'Pixelcraft completely transformed our brand identity. The team understood our vision from day one and delivered beyond expectations.',
-      name: 'Hannah Roberts',
-      title: 'Founder, Aura Cosmetics',
+      quote: 'PixelCraft completely transformed our product packaging. Sales on our web store increased by 40% in the first three months because the designs finally matched our premium ingredients.',
+      name: 'Amara Okereke',
+      title: 'CEO, Aura Organic Skincare',
       avatar: avatar1,
     },
     {
       id: 2,
-      quote: 'Professional, creative, and fast. Every deliverable felt custom-made for us, not a template stretched to fit.',
-      name: 'James Carter',
-      title: 'Marketing Lead, Origin Coffee',
+      quote: 'The brochure and visiting card designs they built for our brand summits are pure visual art. We regularly receive compliments from institutional distributors and investors.',
+      name: 'Simon Vance',
+      title: 'Founder, Origin Coffee Co.',
       avatar: avatar2,
     },
     {
       id: 3,
-      quote: 'The best design partner we\'ve worked with. Clear communication and stunning results at every stage of the process.',
-      name: 'Priya Mehta',
-      title: 'CEO, Metropolis Gallery',
+      quote: 'The poster typography they engineered for our grand winter showcase became an instant classic. They understand paper stock and technical print setups flawlessly.',
+      name: 'Chloe Dupont',
+      title: 'Exhibitions Chief, Paris Fine Arts',
       avatar: avatar3,
     },
   ];
@@ -30,8 +30,16 @@ export default function Testimonials() {
   return (
     <section className="testimonials">
       <div className="container">
-        <span className="eyebrow center">Testimonials</span>
-        <h2 className="section-title">What our clients say</h2>
+        <div className="testimonials-header">
+          <div>
+            <span className="eyebrow eyebrow-outline">Client Reviews</span>
+            <h2 className="testimonials-title">WHAT OUR CLIENTS SAY</h2>
+          </div>
+          <div className="testimonials-nav">
+            <button className="nav-arrow" aria-label="Previous">‹</button>
+            <button className="nav-arrow nav-arrow-active" aria-label="Next">›</button>
+          </div>
+        </div>
 
         <div className="testimonials-grid">
           {testimonials.map(t => (

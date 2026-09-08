@@ -6,7 +6,6 @@ import Work from './components/Work'
 import Process from './components/Process'
 import WhyChooseUs from './components/WhyChooseUs'
 import Possibilities from './components/Possibilities'
-import Showcase from './components/Showcase'
 import Testimonials from './components/Testimonials'
 import Pricing from './components/Pricing'
 import FAQ from './components/FAQ'
@@ -23,7 +22,6 @@ function App() {
       <Process />
       <WhyChooseUs />
       <Possibilities />
-      <Showcase />
       <Testimonials />
       <Pricing />
       <FAQ />
