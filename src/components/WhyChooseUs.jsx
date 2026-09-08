@@ -1,8 +1,8 @@
 export default function WhyChooseUs() {
   const reasons = [
-    { id: 1, title: 'Creative Thinking', description: 'Original ideas tailored to your brand, not templates.' },
-    { id: 2, title: 'Professional Quality', description: 'Polished, production-ready design in every deliverable.' },
-    { id: 3, title: 'Fast Turnaround', description: 'Reliable timelines without compromising on quality.' },
+    { id: 1, title: 'Creative Thinking', description: "We don't do boring templates. Every design is custom, conceptualized to stand out." },
+    { id: 2, title: 'Professional Quality', description: 'Sharp attention to grid alignments, print separations, color metrics, and typography spacing.' },
+    { id: 3, title: 'Fast Turnaround', description: 'Consistent and predictable project timelines with streamlined conceptual checkpoints.' },
   ];
 
   const stats = [
@@ -16,8 +16,9 @@ export default function WhyChooseUs() {
     <section className="why-choose-us">
       <div className="container why-grid">
         <div className="why-left">
-          <span className="eyebrow">Why Us</span>
-          <h2 className="why-title">Why work with us?</h2>
+          <span className="eyebrow eyebrow-outline">The Difference</span>
+          <h2 className="why-title">WHY WORK WITH US?</h2>
+          <p className="why-intro">We operate at the intersection of creative graphic design and brand strategy. We design to solve problems, captivate audiences, and grow businesses.</p>
 
           <ul className="reasons-list">
             {reasons.map(reason => (
