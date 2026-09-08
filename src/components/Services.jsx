@@ -39,7 +39,7 @@ export default function Services() {
         <div className="services-header">
           <div>
             <span className="eyebrow">Our Expertise</span>
-            <h2 className="services-title">Design services for every need</h2>
+            <h2 className="services-title">Design services for<br />every need</h2>
           </div>
           <p className="services-subtitle">From concept to creation, we deliver design solutions for every corner of your brand</p>
         </div>
