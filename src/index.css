@@ -20,7 +20,7 @@
   font: 16px/1.6 var(--sans);
   color-scheme: light;
   color: var(--text-dark);
-  background: var(--bg-white);
+  background: #FAF9F6;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -30,7 +30,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: var(--bg-white);
+  background: #FAF9F6;
   color: var(--text-dark);
   font-family: var(--sans);
 }
