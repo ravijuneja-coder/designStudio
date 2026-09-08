@@ -6,10 +6,10 @@ export default function WhyChooseUs() {
   ];
 
   const stats = [
-    { id: 1, value: '100+', label: 'Projects delivered' },
-    { id: 2, value: '50+', label: 'Happy clients' },
-    { id: 3, value: '10+', label: 'Years experience' },
-    { id: 4, value: '5★', label: 'Average rating' },
+    { id: 1, value: '100+', label: 'Completed Projects' },
+    { id: 2, value: '50+', label: 'Happy Global Clients' },
+    { id: 3, value: '10+', label: 'Design Categories' },
+    { id: 4, value: '5★', label: 'Client Experience Rating' },
   ];
 
   return (
@@ -35,7 +35,7 @@ export default function WhyChooseUs() {
 
         <div className="why-right">
           <div className="stats-card">
-            <p className="stats-heading">Numbers that represent excellence</p>
+            <p className="stats-heading">Numbers that represent<br />excellence.</p>
             <div className="stats-grid">
               {stats.map(stat => (
                 <div key={stat.id} className="stat-item">
