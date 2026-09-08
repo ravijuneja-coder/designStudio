@@ -15,29 +15,31 @@ export default function Hero() {
 
   return (
     <section className="hero" id="home">
-      <span className="hero-eyebrow">— PREMIUM GRAPHIC DESIGN STUDIO</span>
-      <h1 className="hero-title">
-        WE DESIGN IDEAS <em>that get</em><br />NOTICED.
-      </h1>
-      <div className="hero-bottom">
-        <p className="hero-subtitle">
-          Creative graphic design solutions for brands, businesses and individuals — from stunning print designs to engaging digital experiences. We elevate your storytelling.
-        </p>
-        <div className="hero-actions">
-          <button className="btn-primary btn-large">Start a Project →</button>
-          <button className="btn-outline btn-large">View Our Work</button>
+      <div className="container">
+        <span className="hero-eyebrow">— PREMIUM GRAPHIC DESIGN STUDIO</span>
+        <h1 className="hero-title">
+          WE DESIGN IDEAS <em>that get</em><br />NOTICED.
+        </h1>
+        <div className="hero-bottom">
+          <p className="hero-subtitle">
+            Creative graphic design solutions for brands, businesses and individuals — from stunning print designs to engaging digital experiences. We elevate your storytelling.
+          </p>
+          <div className="hero-actions">
+            <button className="btn-primary btn-large">Start a Project →</button>
+            <button className="btn-outline btn-large">View Our Work</button>
+          </div>
         </div>
-      </div>
 
-      <div className="hero-showcase">
-        <div className="hero-showcase-grid">
-          {cards.map(card => (
-            <div key={card.id} className="showcase-card">
-              <span className="showcase-card-tag">{card.tag}</span>
-              <img src={card.image} alt={card.tag} />
-              {card.caption && <span className="showcase-card-caption">✦ {card.caption}</span>}
-            </div>
-          ))}
+        <div className="hero-showcase">
+          <div className="hero-showcase-grid">
+            {cards.map(card => (
+              <div key={card.id} className="showcase-card">
+                <span className="showcase-card-tag">{card.tag}</span>
+                <img src={card.image} alt={card.tag} />
+                {card.caption && <span className="showcase-card-caption">✦ {card.caption}</span>}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -170,7 +170,7 @@
 
 /* Hero Section */
 .hero {
-  padding: 64px 40px 80px;
+  padding: 64px 0 80px;
   background: var(--bg-cream);
 }
 
@@ -186,9 +186,6 @@
 /* Hero Showcase Strip */
 .hero-showcase {
   margin-top: 56px;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 48px 40px;
   border-radius: 20px;
   background-color: var(--navy);
@@ -327,7 +324,7 @@
 
 @media (max-width: 968px) {
   .hero {
-    padding: 48px 40px 60px;
+    padding: 48px 0 60px;
   }
 
   .hero-title {
@@ -343,7 +340,7 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 32px 20px 48px;
+    padding: 32px 0 48px;
   }
 
   .hero-title {
