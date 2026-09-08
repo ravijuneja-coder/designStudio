@@ -446,11 +446,10 @@
 
 .service-card {
   background: white;
-  border-radius: 12px;
+  border-radius: 16px;
   border: 1px solid #e5e5e5;
   overflow: hidden;
   transition: all 0.3s;
-  padding-bottom: 20px;
 }
 
 .service-card:hover {
@@ -460,22 +459,32 @@
 
 .service-thumb {
   width: 100%;
-  height: 160px;
+  height: 220px;
   object-fit: cover;
   display: block;
 }
 
+.service-body {
+  padding: 24px;
+}
+
 .service-title {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 16px 20px 8px;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
   color: #000;
 }
 
+.service-description {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
 .service-link {
-  display: block;
-  margin: 0 20px;
-  font-size: 14px;
+  display: inline-block;
+  font-size: 15px;
   font-weight: 600;
   color: var(--primary);
 }
