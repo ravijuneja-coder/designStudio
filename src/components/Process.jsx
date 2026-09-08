@@ -9,7 +9,11 @@ export default function Process() {
   return (
     <section className="process">
       <div className="container">
-        <h2 className="process-title">From idea to final design</h2>
+        <div className="process-header">
+          <span className="eyebrow eyebrow-outline eyebrow-dark center">Our Method</span>
+          <h2 className="process-title">From idea to final design</h2>
+          <p className="process-subtitle">A structured, transparent four-step workflow designed to translate pure vision into strategic, beautiful execution.</p>
+        </div>
 
         <div className="process-grid">
           {steps.map(step => (
