@@ -37,6 +37,12 @@
   margin-right: auto;
 }
 
+.eyebrow-outline {
+  background: transparent;
+  border: 1px solid var(--primary);
+  font-size: 12px;
+}
+
 /* Header */
 .header {
   background: #FAF9F6;
@@ -527,21 +533,53 @@
 /* Work Section */
 .work {
   padding: 80px 40px;
-  text-align: center;
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.work-title-heading {
+  font-size: 40px;
+  font-weight: 800;
+  color: #000;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+  margin-top: 12px;
+}
+
+.work-subtitle {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  max-width: 380px;
+}
+
+@media (max-width: 768px) {
+  .work-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
 
 .work-filters {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 48px;
 }
 
 .filter-pill {
-  background: transparent;
+  background: white;
   border: 1px solid #e5e5e5;
-  color: #666;
+  color: #333;
   padding: 10px 22px;
   border-radius: 999px;
   font-weight: 600;
@@ -551,13 +589,13 @@
 }
 
 .filter-pill:hover {
-  border-color: var(--navy);
-  color: #000;
+  border-color: var(--primary);
+  color: var(--primary);
 }
 
 .filter-pill.active {
-  background: var(--navy);
-  border-color: var(--navy);
+  background: var(--primary);
+  border-color: var(--primary);
   color: white;
 }
 

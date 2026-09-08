@@ -5,7 +5,7 @@ import metropolisImg from '../assets/images/work-metropolis-art.jpg'
 import bistroImg from '../assets/images/work-bistro.jpg'
 
 export default function Work() {
-  const filters = ['All', 'Branding', 'Web', 'Packaging', 'Print'];
+  const filters = ['All', 'Branding', 'Print', 'Digital', 'Web', 'Packaging', 'Social Media'];
   const [active, setActive] = useState('All');
 
   const projects = [
@@ -20,8 +20,13 @@ export default function Work() {
   return (
     <section id="work" className="work">
       <div className="container">
-        <span className="eyebrow center">Portfolio</span>
-        <h2 className="section-title">Work that speaks for itself.</h2>
+        <div className="work-header">
+          <div>
+            <span className="eyebrow eyebrow-outline">Portfolio</span>
+            <h2 className="work-title-heading">Work that speaks for<br />itself.</h2>
+          </div>
+          <p className="work-subtitle">A selection of creative projects designed to help brands communicate, connect and stand out in digital and print mediums.</p>
+        </div>
 
         <div className="work-filters">
           {filters.map(f => (
