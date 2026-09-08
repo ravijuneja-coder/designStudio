@@ -328,8 +328,11 @@
 }
 
 .hero-title em {
-  font-style: italic;
-  font-weight: 400;
+  font-family: 'Caveat', cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: var(--primary);
   text-transform: none;
 }
 
