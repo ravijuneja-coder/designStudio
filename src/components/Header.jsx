@@ -3,10 +3,11 @@ export default function Header() {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <span className="logo-circle">●</span>
-          <span className="logo-text">studio</span>
+          <span className="logo-mark">◆</span>
+          <span className="logo-text">PIXELCRAFT</span>
         </div>
         <nav className="nav">
+          <a href="#home">Home</a>
           <a href="#services">Services</a>
           <a href="#work">Work</a>
           <a href="#pricing">Pricing</a>

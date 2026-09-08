@@ -5,10 +5,10 @@ export default function Footer() {
         <div className="footer-content">
           <div className="footer-section">
             <div className="logo">
-              <span className="logo-circle">●</span>
-              <span className="logo-text">studio</span>
+              <span className="logo-mark">◆</span>
+              <span className="logo-text">PIXELCRAFT</span>
             </div>
-            <p className="footer-description">Award-winning design studio creating digital experiences</p>
+            <p className="footer-description">Creative design studio crafting brands and digital experiences that get noticed.</p>
           </div>
 
           <div className="footer-section">
@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>&copy; 2024 Design Studio. All rights reserved.</p>
+          <p>&copy; 2026 Pixelcraft. All rights reserved.</p>
           <div className="footer-links">
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms of Service</a>

@@ -1,25 +1,47 @@
+import { useState } from 'react'
+import auraImg from '../assets/images/work-aura-cosmetics.jpg'
+import originCoffeeImg from '../assets/images/work-origin-coffee.jpg'
+import metropolisImg from '../assets/images/work-metropolis-art.jpg'
+import bistroImg from '../assets/images/work-bistro.jpg'
+
 export default function Work() {
+  const filters = ['All', 'Branding', 'Web', 'Packaging', 'Print'];
+  const [active, setActive] = useState('All');
+
   const projects = [
-    { id: 1, title: 'Project One', category: 'Web Design' },
-    { id: 2, title: 'Project Two', category: 'Branding' },
-    { id: 3, title: 'Project Three', category: 'Product Design' },
-    { id: 4, title: 'Project Four', category: 'Web Design' },
-    { id: 5, title: 'Project Five', category: 'Mobile App' },
-    { id: 6, title: 'Project Six', category: 'Brand Design' },
+    { id: 1, title: 'Aura Cosmetics Identity System', category: 'Branding', image: auraImg },
+    { id: 2, title: 'Origin Coffee Structural Box', category: 'Packaging', image: originCoffeeImg },
+    { id: 3, title: 'Metropolis Art Exhibition Series', category: 'Print', image: metropolisImg },
+    { id: 4, title: "L'Avenue Bistro Collateral", category: 'Branding', image: bistroImg },
   ];
+
+  const visible = active === 'All' ? projects : projects.filter(p => p.category === active);
 
   return (
     <section id="work" className="work">
       <div className="container">
-        <h2 className="section-title">Work that speaks for itself</h2>
-        <p className="section-subtitle">Take a look at what we've created</p>
+        <span className="eyebrow center">Portfolio</span>
+        <h2 className="section-title">Work that speaks for itself.</h2>
+
+        <div className="work-filters">
+          {filters.map(f => (
+            <button
+              key={f}
+              className={`filter-pill ${active === f ? 'active' : ''}`}
+              onClick={() => setActive(f)}
+            >
+              {f}
+            </button>
+          ))}
+        </div>
 
         <div className="work-grid">
-          {projects.map(project => (
+          {visible.map(project => (
             <div key={project.id} className="work-item">
-              <div className="work-image-placeholder"></div>
-              <h3 className="work-title">{project.title}</h3>
-              <p className="work-category">{project.category}</p>
+              <img className="work-image-placeholder" src={project.image} alt={project.title} />
+              <div className="work-overlay">
+                <h3 className="work-title">{project.title}</h3>
+              </div>
             </div>
           ))}
         </div>

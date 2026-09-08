@@ -5,9 +5,12 @@
 :root {
   --primary: #2563eb;
   --primary-dark: #1d4ed8;
-  --text-dark: #000;
-  --text-light: #666;
-  --bg-light: #f9f9f9;
+  --navy: #0e1524;
+  --navy-light: #161f33;
+  --text-dark: #0a0a0a;
+  --text-light: #6b7280;
+  --bg-light: #f7f5f2;
+  --bg-cream: #f7f5f0;
   --bg-white: #ffffff;
   --border-color: #e5e5e5;
 

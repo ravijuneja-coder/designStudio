@@ -1,55 +1,51 @@
+import stickerImg from '../assets/images/service-sticker.jpg'
+import brochureImg from '../assets/images/service-brochure.jpg'
+import visitingCardImg from '../assets/images/service-visiting-card.jpg'
+import flyerImg from '../assets/images/service-flyer.jpg'
+import websiteImg from '../assets/images/service-website.jpg'
+import logoImg from '../assets/images/service-logo.jpg'
+import socialImg from '../assets/images/service-social.jpg'
+import posterImg from '../assets/images/service-poster.jpg'
+import packagingImg from '../assets/images/service-packaging.jpg'
+import menuImg from '../assets/images/service-menu.jpg'
+import invitationImg from '../assets/images/service-invitation.jpg'
+import presentationImg from '../assets/images/service-presentation.jpg'
+import certificateImg from '../assets/images/service-certificate.jpg'
+import bannerImg from '../assets/images/service-banner.jpg'
+import infographicImg from '../assets/images/service-infographic.jpg'
+
 export default function Services() {
   const services = [
-    {
-      id: 1,
-      icon: '🎨',
-      title: 'Brand Design',
-      description: 'Logo, identity systems, and brand guidelines'
-    },
-    {
-      id: 2,
-      icon: '🖼️',
-      title: 'Web Design',
-      description: 'Beautiful and functional websites'
-    },
-    {
-      id: 3,
-      icon: '📱',
-      title: 'Product Design',
-      description: 'User-centered app and product design'
-    },
-    {
-      id: 4,
-      icon: '✨',
-      title: 'Motion Design',
-      description: 'Animations and interactive experiences'
-    },
-    {
-      id: 5,
-      icon: '🎯',
-      title: 'UX Research',
-      description: 'Understanding your users deeply'
-    },
-    {
-      id: 6,
-      icon: '💼',
-      title: 'Consulting',
-      description: 'Strategic design guidance'
-    }
+    { id: 1, title: 'Sticker Design', image: stickerImg },
+    { id: 2, title: 'Brochure Design', image: brochureImg },
+    { id: 3, title: 'Visiting Card Design', image: visitingCardImg },
+    { id: 4, title: 'Flyer Design', image: flyerImg },
+    { id: 5, title: 'Website Design', image: websiteImg },
+    { id: 6, title: 'Logo Design', image: logoImg },
+    { id: 7, title: 'Social Media Design', image: socialImg },
+    { id: 8, title: 'Poster Design', image: posterImg },
+    { id: 9, title: 'Packaging Design', image: packagingImg },
+    { id: 10, title: 'Menu Design', image: menuImg },
+    { id: 11, title: 'Invitation Design', image: invitationImg },
+    { id: 12, title: 'Presentation Design', image: presentationImg },
+    { id: 13, title: 'Certificate & Award Design', image: certificateImg },
+    { id: 14, title: 'Banner & Standee Design', image: bannerImg },
+    { id: 15, title: 'Infographic Design', image: infographicImg },
   ];
 
   return (
     <section id="services" className="services">
       <div className="container">
+        <span className="eyebrow center">Our Expertise</span>
         <h2 className="section-title">Design services for every need</h2>
-        <p className="section-subtitle">We create beautiful designs that solve real problems</p>
+        <p className="section-subtitle">From concept to creation, we deliver design solutions for every corner of your brand</p>
 
         <div className="services-grid">
           {services.map(service => (
             <div key={service.id} className="service-card">
-              <div className="service-icon">{service.icon}</div>
+              <img className="service-thumb" src={service.image} alt={service.title} />
               <h3 className="service-title">{service.title}</h3>
-              <p className="service-description">{service.description}</p>
+              <a href="#contact" className="service-link">Learn more →</a>
             </div>
           ))}
         </div>
